@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "install model",
+            "type": "python",
+            "request": "launch",
+            "program": "install_models.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PUBSUB_HOSTNAME": "localhost",
+                "MODEL_TARGET":"tiny"
+            }
+        },
+        {
+            "name": "generate srt",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PUBSUB_HOSTNAME": "localhost",
+                "MODEL_TARGET":"tiny"
+            }
+        },
+    ]
+}
